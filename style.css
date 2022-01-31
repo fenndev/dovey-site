@@ -9,11 +9,6 @@ html {
     background: rgb(4,3,1);
     background: linear-gradient(360deg, rgba(4,3,1,1) 0%, rgba(229,179,92,1) 100%);
     background-repeat: no-repeat;
-    background-size: auto;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
 }
 
 body {
@@ -23,79 +18,59 @@ body {
 
 .container {
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 33% 33% 33%;
-}
-
-header {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
     display: flex;
     flex-direction: column;
+}
+
+.site-head {
+    display: flex;
+    height: 45%;
+    flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    justify-content: space-evenly;
 }
 
-header h1 {
-    margin-top: 25px;
-    color: white;
-}
-
-.berdly {
+.dovey-image {
     object-fit: cover;
     border-radius: 100%;
     height: 200px;
     width: 200px;
 }
 
-.links-discord {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+.dovey-name {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dovey-desc {
+    color: white;
+    font-family: 'Lora', serif;
 }
 
 .links {
-    height: 500px;
-    width: 33%;
-    border-radius: 5px;
-}
-
-.links ul {
-    height: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    height: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
-.links li {
-    border: 2px white solid;
-    height: 9%;
-    width: 100%;
-}
-
-.links li:hover {
-    background-color: white;
-    color: rgba(229,179,92,1);
-}
-
-.links ul a {
+.links a {
+    font-size: 20px;
+    font-family: 'Martel', serif;
     text-decoration: none;
-    width: 100%;
-    height: 100%;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    color: white;
+    width: 30%;
+    height: 9%;
+    border: 2px white solid;
+    transition: background-color .25s, color .25s;
+}
+
+.links a:hover {
+    background-color: white;
+    color: #030301;
 }
