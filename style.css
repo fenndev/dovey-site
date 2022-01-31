@@ -61,16 +61,35 @@ body {
     font-family: 'Martel', serif;
     text-decoration: none;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 30%;
-    height: 9%;
+    height: 10%;
     border: 2px white solid;
-    transition: background-color .25s, color .25s;
+    transition: background-color .25s, color .25s, filter .25s;
 }
 
 .links a:hover {
     background-color: white;
     color: #030301;
+}
+
+.links a:hover div img {
+    filter:invert(0%);
+}
+
+.name {
+    justify-self: center;
+    align-self: center;
+}
+
+.icon {
+    align-self: center;
+    display: flex;
+    margin-left: 10px;
+}
+
+.icon img {
+    height: 30px;
+    filter:invert(100%);
 }
