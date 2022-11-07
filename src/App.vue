@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Link from './components/Link.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <Link to="#" />
 </template>
